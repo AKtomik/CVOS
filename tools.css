@@ -1,0 +1,21 @@
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+img:hover.hover-rotate {
+	transform: rotate(90deg) scale(1.3);
+}
+
+
+.light-theme {
+	color: black;
+}
+
+.dark-theme {
+	color: white;
+}

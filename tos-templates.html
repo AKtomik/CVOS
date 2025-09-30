@@ -1,0 +1,324 @@
+<!--
+data-title="string": window title
+data-hideheader: hide header
+data-openway="openway": way to open window
+-->
+
+<template id="template-welcome">
+	<style>
+	</style>
+	<tos-window class="size-middle skin-orange scrollable project-window" data-title="Welcome in TriangleOS!" data-openway="center" data-unicOpen>
+		<div class="welcome-header">
+			<div class="welcome-title">Welcome in TriangleOS!</div>
+		</div>
+	</tos-window>
+</template>
+
+
+<!-------------
+   PROJECTS
+-------------->
+
+<template id="template-project-tictactoe">
+	<tos-window class="size-middle skin-black scrollable project-window dark-theme" data-title="projet : tic tac toe of space" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Morpion 4D</div>
+			<img src="assets/float/hypercube_moy.png" alt="an hypercube" class="rotating" style="--rotationg-normal-speed: 10; --rotating-hover-speed: 20;">
+		</div>
+		<p>
+			Un morpion qui repousse notre perception de l'espace.
+			Jouez à des parties de morpion en 3D, 4D et même plus !
+		</p>
+		<p>
+			Développement de calculs matriciels pour transformer des positions de n-dimension en 2D.
+		</p>
+	</tos-window>
+</template>
+
+
+<template id="template-project-leashed">
+	<tos-window class="size-middle skin-green scrollable project-window" data-title="projet : a leashed walk" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">A leahsed walk</div>
+			<img src="assets/float/animate/wait.gif" alt="a dogo">
+		</div>
+		<p>
+			Roguelite réalisé en équipe durant la PirateJam 16 sur le thème : <b>you are the weapon.</b>
+		</p>
+		<p>
+			Première réalisation en game jam.
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-shinigami">
+	<tos-window class="size-middle skin-red scrollable project-window" data-title="projet : a leashed walk" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Shinigami</div>
+			<img src="assets/float/animate/apple_croc.gif" alt="an apple">
+		</div>
+		<p>
+			Une app discord reprenant l'univers de Death Note.
+		</p>
+		<p>
+			Mise en place d'un flow de développement. Maintenance et optimisation pour une utilisation active.
+			<span class="project-comment">
+				(utilisée dans +500 serveurs)
+			</span>
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-purple">
+	<tos-window class="size-middle skin-purple scrollable project-window" data-title="projet : purple is red or blue" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Purple</div>
+			<img src="assets/icons/app/purple.png" alt="purple logo">
+		</div>
+		<p>
+			Un jeu d'esquive coloré multiplayer entièrement réalisé en C++
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-triangle">
+	<tos-window class="size-middle skin-orange scrollable project-window" data-title="projet : TriangleOS" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">TriangleOS</div>
+			<img src="assets/icons/app/triangleOS.png" alt="TriangleOS Logo" class="hover-rotate">
+		</div>
+		<p>
+			<a href="https://github.com/AKtomik/triangleOS" target="_blank">TriangleOS</a>
+			est une biblithèque javascript pour créer des sites web avec une apparance de système d'exploitation.
+			<!--</br>Elle est utilisable par tous. Ce projet a été validé en tant que sous domaine de js.org.-->
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-maze">
+	<tos-window class="size-middle skin-gray scrollable project-window" data-title="projet : Crazy maze" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Crazy maze</div>
+			<img src="assets/icons/app/crazyMaze.png" alt="TriangleOS Logo">
+		</div>
+		<p>
+			Jeu de labytinthe configurable, réalisé en se limitant à p5 2D.
+		</p>
+		<p>
+			Réalisation des calcul de profondeur et perspective.
+		</p>
+		<!--<p class="project-comment">projet scolaire</p>-->
+	</tos-window>
+</template>
+
+<template id="template-project-fixcalc">
+	<tos-window class="size-middle skin-blue scrollable project-window" data-title="projet : fixcalc" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Calculatrice de dérivées</div>
+			<img src="assets/icons/app/fixcalc.svg" alt="TriangleOS Logo">
+		</div>
+		<p>
+			Calculatrice permetant de <b>dériver</b> des fonctions.
+		</p>
+		<p>
+			Utilisation de python pour les calculs, et flask pour le backend.
+		</p>
+		<p class="project-comment">réalisé en duo</p>
+	</tos-window>
+</template>
+
+<template id="template-project-twowords">
+	<tos-window class="size-middle skin-lime scrollable project-window" data-title="projet : twoWOrds" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">tWOWOrds</div>
+			<img src="assets/icons/app/twoWOrds.ico" alt="twoWOrds Logo">
+		</div>
+		<p>
+			Trouver les lettre manquantes à l'intersection de deux mots.
+		</p>
+		<p>
+			Dévloppé en couplant une compilation des dictionnaires par python et une application web en javascript.
+		</p>
+		<p class="project-comment">projet scolaire</p>
+	</tos-window>
+</template>
+
+<!-------------
+     TUTO
+-------------->
+
+
+
+<template id="template-tuto-anything">
+	<tos-window class="size-middle" data-title="A window can contain ANYTHING">
+		<h1 style="text-align: center;">
+			ANYTHING
+		</h1>
+		<!-- just left ANYTHING for the joke -haha (you) -->
+		<!--<p>
+			A window can contain almost anything HTML content. It is a container like another, isn't it?
+		</p>
+		<p>
+			Except it can be open, dragged, resized...
+		</p>-->
+	</tos-window>
+</template>
+
+<template id="template-tuto-skin">
+	<tos-window class="size-middle skin-raimbow" data-title="custom skins">
+		<h1>
+			Using skins
+		</h1>
+		<p>
+			There is a lot of defaults skins already aviable.
+			But you can create your owns in tos-skin.css or even in another CSS file that you are importing yourself.
+		</p>
+	</tos-window>
+</template>
+
+
+<template id="template-tuto-style">
+	<tos-window class="size-middle" data-title="custom style and size">
+		<p>
+			You can change a element size and skin by adding class.
+		</p>
+		<p>
+			You can make it 
+			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-red')">
+			red
+			</a>
+			, 
+			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-purple')">
+			purple
+			</a>
+			 or 
+			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-transparent')">
+			transparent
+			</a>
+			or even 
+			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-deep', false)">
+			scary
+			</a>
+			.
+		</p>
+		<p>
+			You can make it 
+			<a onclick="TriangleOS.Window.parent(this).applySize('size-small')">
+			small
+			</a>
+			, 
+			<a onclick="TriangleOS.Window.parent(this).applySize('size-middle')">
+			middle
+			</a>
+			 or 
+			<a onclick="TriangleOS.Window.parent(this).applySize('size-big')">
+			big 
+			</a>
+			or even 
+			<a onclick="TriangleOS.Window.parent(this).applySize('size-full')">
+			full
+			</a>
+			.
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-tuto-neast">
+	<tos-window class="size-big skin-glass" data-title="Window is window container">
+		<tos-window class="size-middle skin-red" data-title="Did you know"></tos-window>
+		<tos-window class="size-middle skin-green" data-title="you can create windows"></tos-window>
+		<tos-window class="size-middle skin-blue" data-title="inside of others windows?"></tos-window>
+	</tos-window>
+</template>
+
+
+<template id="template-fun-winception">
+	<tos-window class="size-middle skin-glass" data-title="winception">
+		<p>
+			how deep is it?</br>
+			<a onclick="TriangleOS.Template.spawn('template-fun-winception', TriangleOS.Window.parent(this))">
+				click here to know
+			</a>
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-fun-3cats">
+	<tos-window class="size-small skin-blue" data-title="blue cat"></tos-window>
+	<tos-window class="size-small skin-red" data-title="red cat"></tos-window>
+	<tos-window class="size-small skin-orange" data-title="orange cat"></tos-window>
+</template>
+
+<template id="template-fun-invicible">
+	<tos-window class="size-little skin-glass" data-title="TRY TO CLOSE ME" data-closeaction="repos" data-hideminibutton>
+		<h3>
+			This window</br> is invicible
+		</h3>
+		<p>
+			or 
+			<a onclick="TriangleOS.Window.parent(this).remove()">
+					is it
+			</a>
+			?
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-fun-big">
+	<tos-window class="size-big skin-glass" data-title="a lot of text">
+		<p>
+			This window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
+		</p>
+		<p>
+			But everything has an end :)
+		</p>
+	</tos-window>
+</template>
+
+
+<template id="template-filter-grayscale">
+	<tos-window class="size-middle skin-filter-grayscale" data-title="grayscale filter">
+	</tos-window>
+</template>
+
+
+<template id="template-filter-negative">
+	<tos-window class="size-middle skin-filter-negative" data-title="negative filter">
+	</tos-window>
+</template>
+
+<template id="template-filter-saturate">
+	<tos-window class="size-middle skin-filter-saturate" data-title="saturate filter">
+	</tos-window>
+</template>
+
+
+<template id="template-iframe-4D">
+	<tos-window class="size-big skin-black" data-title="tic tac toe in 4D">
+		<iframe src="https://itch.io/embed-upload/14122527?color=000000"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-dogo">
+	<tos-window class="size-big skin-black" data-title="a time loop">
+		<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-web">
+	<tos-window class="size-middle skin-black" data-title="navigateur web">
+		<iframe src="https://www.dogpile.com/"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-rick">
+	<tos-window class="size-middle skin-black" data-title="youtube :)">
+		<iframe src="https://www.youtube.com/embed/xvFZjo5PgG0?autoplay=1"></iframe>
+	</tos-window>
+</template>

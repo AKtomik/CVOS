@@ -1,0 +1,69 @@
+
+a {
+	cursor: pointer; color: blue;
+}
+
+
+
+/* 
+	projects windows
+*/
+
+.project-window {
+
+	--link-color-base: #ffff00;
+	--link-color-hover: #ff0000;
+
+	/* style paragraph */
+	p {
+		font-size: 1.5rem;
+		margin-left: 5%;
+		margin-right: 5%;
+		line-break: normal;
+		text-align: justify;
+		/*text-align-last: center;*/
+	}
+
+	.project-comment {
+		font-size: 1rem;
+		text-align: right;
+	}
+
+	/* style header */
+	.project-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		text-align: center;
+		gap: 15px;
+	}
+
+	.project-header .project-title {
+		font-size: 2.5rem;
+		font-weight: bold;
+		text-align: center;
+		background-color: rgba(255,255,0,0.2);
+		box-shadow: 0 0 10px rgba(255,255,0,0.3);
+	}
+
+	.project-header img {
+		position: block;
+		margin: 2%;
+		width: 15%;
+		transition: transform 3s ease;
+	}
+
+	/* style links */
+	a {
+		color: var(--link-color-base);
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.3s ease, transform 0.3s ease;
+	}
+
+	a:hover {
+		color: var(--link-color-hover);
+		transform: scale(1.05);
+	}
+}
