@@ -19,3 +19,26 @@ img:hover.hover-rotate {
 .dark-theme {
 	color: white;
 }
+
+.heffect {
+	--heffect-spin-speed-normal: 0;
+	--heffect-spin-speed-hover: 1;
+
+	--heffect-actual-speed: var(--heffect-spin-speed-normal);
+  animation: spin 60s linear infinite;
+	/*animation: spin if(style(--heffect-actual-speed: 0): 0s; else: calc(60s / var(--heffect-actual-speed))) linear infinite;*/
+}
+
+.heffect:hover {
+	--heffect-actual-speed: var(--heffect-spin-speed-hover);
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(calc(var(--heffect-actual-speed) * 1turn));
+  }
+}
