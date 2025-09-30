@@ -7,10 +7,6 @@
 	text-align: right;
 }
 
-img:hover.hover-rotate {
-	transform: rotate(90deg) scale(1.3);
-}
-
 
 .light-theme {
 	color: black;
@@ -20,25 +16,36 @@ img:hover.hover-rotate {
 	color: white;
 }
 
-.heffect {
-	--heffect-spin-speed-normal: 0;
-	--heffect-spin-speed-hover: 1;
 
-	--heffect-actual-speed: var(--heffect-spin-speed-normal);
-  animation: spin 60s linear infinite;
-	/*animation: spin if(style(--heffect-actual-speed: 0): 0s; else: calc(60s / var(--heffect-actual-speed))) linear infinite;*/
+img.hover-rotate {
+	transition: transform 3s ease;
 }
 
-.heffect:hover {
-	--heffect-actual-speed: var(--heffect-spin-speed-hover);
+img:hover.hover-rotate {
+	transform: rotate(90deg) scale(1.3);
 }
 
+
+.hover-spin {
+  --hover-spin-speed: 10;
+  animation: spin calc(60s / var(--hover-spin-speed)) linear infinite;
+  animation-play-state: paused;
+}
+
+.hover-spin:hover {
+  animation-play-state: running;
+}
+
+.natural-spin {
+  --natural-spin-speed: 10;
+  animation: spin calc(60s / var(--natural-spin-speed)) linear infinite;
+}
 
 @keyframes spin {
   from {
     transform: rotate(0turn);
   }
   to {
-    transform: rotate(calc(var(--heffect-actual-speed) * 1turn));
+    transform: rotate(1turn);
   }
 }
