@@ -7,10 +7,49 @@ data-openway="openway": way to open window
 <template id="template-welcome">
 	<style>
 	</style>
-	<tos-window class="size-middle skin-orange scrollable project-window" data-title="Welcome in TriangleOS!" data-openway="center" data-unicOpen>
-		<div class="welcome-header">
-			<div class="welcome-title">Mon portfolio</div>
+	<tos-window class="size-middle skin-orange scrollable project-window" data-title="Bienvenue sur mon protfolio !" data-openway="center" data-unicOpen>
+		<div class="project-header">
+			<h1 class="project-title">En recherche d'une alternance</h1>
 		</div>
+			<p>
+				Étudiant au <a onclick="TriangleOS.Window.open('template-curry-cnam', 'desktop')">CNAM ENJMIN</a>, Je recherche une alternance pour la periode 2025-2028.
+			</p>
+			<p>
+				Le rythme : 1j formation / 4j entreprise.
+			</p>
+			<p>
+				Le lieu : mobile France.
+			</p>
+			<p>
+				Vous trouverez <a onclick="TriangleOS.Window.open('template-curry-cnam', 'desktop')">ici</a> tous les détails sur la formation.
+			</p>
+
+		<!--<div class="project-header">
+			<h1 class="project-title">Cette page</h1>
+		</div>
+			<p>
+				À gauche tous les élements 
+			</p>-->
+
+		<div class="project-header">
+			<h1 class="project-title">Me contacter</h1>
+		</div>
+		<p>
+			Mon adresse mail : evanndev.contact@gmail.com
+		</p>
+		<p>
+			Je reste également disponible sur LinkedIn.
+		</p>
+
+		<h1>
+			
+		</h1>
+		<p>
+			Bonne navigation!
+		</p>
+		<a onclick="TriangleOS.Window.open('template-iframe-test', 'desktop')">
+			TEST
+		</a>
 	</tos-window>
 </template>
 
@@ -204,10 +243,57 @@ data-openway="openway": way to open window
 		</p>
 
 		<p>
-			la plaquette / le programme détaillé
+			voir <a onclick="TriangleOS.Window.open('template-iframe-pdf-plak', 'desktop')">la plaquette</a></br> 
+			voir <a onclick="TriangleOS.Window.open('template-iframe-pdf-program', 'desktop')">le programme</a></br>
+			voir <a onclick="TriangleOS.Window.open('template-iframe-pdf-calandar', 'desktop')">le calendrier</a></br>
 		</p>
 	</tos-window>
 </template>
+
+<!-------------
+   IFRAMES
+-------------->
+
+
+
+<template id="template-iframe-game-4D">
+	<tos-window class="size-big skin-black" data-title="tic tac toe in 4D">
+		<iframe src="https://itch.io/embed-upload/14122527?color=000000"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-game-dogo">
+	<tos-window class="size-big skin-black" data-title="a time loop">
+		<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-game-fixcalc">
+	<tos-window class="size-middle skin-black" data-title="test">
+		<iframe src="https://fixcalc.onrender.com/"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-pdf-plak">
+	<tos-window class="size-middle skin-black" data-title="la plaquette de formation">
+		<iframe src="https://drive.google.com/file/d/1BojrSKRjwH6IsTzwdA6p0UwwCUz3R6Hc/preview"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-pdf-calandar">
+	<tos-window class="size-middle skin-black" data-title="le calendrier de formation">
+		<iframe src="https://drive.google.com/file/d/1JVLPv1WdrS7RynKcxD6Mz0Ts_g7PoUde/preview"></iframe>
+	</tos-window>
+</template>
+<template id="template-iframe-pdf-program">
+	<tos-window class="size-middle skin-black" data-title="la programme de formation">
+		<iframe src="https://drive.google.com/file/d/1TPdiS2en1VeR8lrwF1l9bAAyEHX-Y2I4/preview"></iframe>
+	</tos-window>
+</template>
+
+<template id="template-iframe-test">
+	<tos-window class="size-middle skin-black" data-title="test">
+		<iframe src="https://fixcalc.onrender.com/"></iframe>
+	</tos-window>
+</template>
+
+
 
 <!-------------
      TUTO
@@ -362,27 +448,5 @@ data-openway="openway": way to open window
 
 <template id="template-filter-saturate">
 	<tos-window class="size-middle skin-filter-saturate" data-title="saturate filter">
-	</tos-window>
-</template>
-
-
-<template id="template-iframe-4D">
-	<tos-window class="size-big skin-black" data-title="tic tac toe in 4D">
-		<iframe src="https://itch.io/embed-upload/14122527?color=000000"></iframe>
-	</tos-window>
-</template>
-<template id="template-iframe-dogo">
-	<tos-window class="size-big skin-black" data-title="a time loop">
-		<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>
-	</tos-window>
-</template>
-<template id="template-iframe-web">
-	<tos-window class="size-middle skin-black" data-title="navigateur web">
-		<iframe src="https://www.dogpile.com/"></iframe>
-	</tos-window>
-</template>
-<template id="template-iframe-rick">
-	<tos-window class="size-middle skin-black" data-title="youtube :)">
-		<iframe src="https://www.youtube.com/embed/xvFZjo5PgG0?autoplay=1"></iframe>
 	</tos-window>
 </template>
