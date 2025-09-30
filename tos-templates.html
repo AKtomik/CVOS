@@ -144,9 +144,70 @@ data-openway="openway": way to open window
 </template>
 
 <!-------------
-     INFO
+     CURRY
 -------------->
 
+
+<template id="template-curry-skills">
+	<tos-window class="size-middle skin-glass-white scrollable project-window curry-skills-window" data-title="mes compétences" data-unicOpen>
+		<p>
+			Compétences: travail d'équipe / organisation de projets
+		</p>
+		<p>
+			Logicels et languages: python / C++ / ts-js / godot
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-curry-levels">
+	<tos-window class="size-middle skin-glass-white scrollable project-window curry-levels-window" data-title="mon parcours" data-unicOpen>
+		<p>
+			Au lycée, j'ai choisi les spécialités Maths et NSI, en plus de Maths expertes.
+		</p>
+		<p>
+			Je suis étudiant au CNAM ENJMIN pour les 3 prochaines années.
+		</p>
+		<p>
+			J'ai passé mon BAFA.
+		</p>
+		<p>
+			J'ai mon PSC. (certificat de premiers secours)
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-curry-xp">
+	<tos-window class="size-middle skin-glass-white scrollable project-window curry-xp-window" data-title="mes experiences professionnelles" data-unicOpen>
+		<h1>Vacances 2024/2025</h1>
+		<p>Animation en centre de loisirs.</p>
+			<ul class="p_array">
+				<li><p>Travailler sur un <b>imaginaire précis</b></p></li>
+				<li><p>Éxperimenter un rythme soutenu (50-60h/sem)</p></li>
+			</ul>
+		<h1>Juillet/Août 2025</h1>
+		<p>Travail dans l'entreprise <a href="https://www.keysia.fr/" target="_blank">Keysia</a>, sur la création d'un site d'analyse financière.</p>
+			<ul class="p_array">
+				<li><p>Travailler en équipe</p></li>
+				<li><p>Adopter un workflow de production</p></li>
+			</ul>
+	</tos-window>
+</template>
+
+<template id="template-curry-cnam">
+	<tos-window class="size-middle skin-glass-white scrollable project-window curry-cnam-window" data-title="l'école et la formation" data-unicOpen>
+		<p>
+			licence informatique jeux vidéos
+		</p>
+
+		<p>
+			1j formation / 4j entreprise
+		</p>
+
+		<p>
+			la plaquette / le programme détaillé
+		</p>
+	</tos-window>
+</template>
 
 <!-------------
      TUTO
@@ -255,12 +316,12 @@ data-openway="openway": way to open window
 <template id="template-fun-invicible">
 	<tos-window class="size-little skin-glass" data-title="TRY TO CLOSE ME" data-closeaction="repos" data-hideminibutton>
 		<h3>
-			This window</br> is invicible
+			Cette fenêtre</br> est invincible
 		</h3>
 		<p>
-			or 
+			Ou l'est elle 
 			<a onclick="TriangleOS.Window.parent(this).remove()">
-					is it
+					vraiment
 			</a>
 			?
 		</p>

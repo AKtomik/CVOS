@@ -1,15 +1,13 @@
-
-.tos-window.skin-raimbow {
+.tos-window.skin-glass-black {
 	> section {
-		background: linear-gradient(
-			90deg,
-			red,
-			orange,
-			yellow,
-			green,
-			blue,
-			indigo,
-			violet
-		);
+		background-color: #00000066;
+		backdrop-filter: blur(10px) brightness(.5);
+	}
+}
+
+.tos-window.skin-glass-white {
+	> section {
+		background-color: #ffffff33;
+		backdrop-filter: blur(10px);
 	}
 }

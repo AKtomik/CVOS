@@ -1,6 +1,41 @@
 img {
 	image-rendering: pixelated;
 }
+
 pxiel-art {
 	image-rendering: pixelated !important;
+}
+
+/*.tos-desktop-icon > header > img */
+
+.tos-desktop-icon > footer > p {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+
+ul.p_array {
+	/*list-style:none;*/
+	/*padding: 0;
+	margin: 0;*/
+	margin-top: .2em;
+	margin-bottom: .5em;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: justify;
+	li {
+		margin: var(--article-li-margin);
+		padding: 0;
+		line-height: normal; /* Reset default line height */
+
+		p {
+			/*hyphens: auto;*/
+			margin: 0;
+		}
+		
+	}
+	li::marker {
+		content: "▸ ";
+		font-size: var(--article-li-point-size);
+	}
 }
