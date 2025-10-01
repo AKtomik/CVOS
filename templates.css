@@ -16,7 +16,6 @@ a {
 
 	/* style paragraph */
 	p {
-		font-size: 1.5rem;
 		margin-left: 5%;
 		margin-right: 5%;
 		line-break: normal;
@@ -24,9 +23,14 @@ a {
 		/*text-align-last: center;*/
 	}
 
-	.project-comment {
-		font-size: 1rem;
-		text-align: right;
+	font-size: 1.5rem;
+	
+	.small {
+		font-size: 1.2rem;
+	}
+
+	.tiny {
+		font-size: .9rem;
 	}
 
 	/* style header */
