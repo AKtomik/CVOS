@@ -108,3 +108,13 @@ a {
 		transform: scale(1.05);
 	}
 }
+
+/* special */
+
+.absolute-timeline {
+	position: absolute;
+	outline: black solid 1px;
+	left: .75em;
+	height: 1000%;
+	width: 0;
+}

@@ -14,28 +14,26 @@ pxiel-art {
 }
 
 
-ul.p_array {
-	/*list-style:none;*/
-	/*padding: 0;
-	margin: 0;*/
+ul.li_curse {
 	margin-top: .2em;
 	margin-bottom: .5em;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-align: justify;
 	li {
-		margin: var(--article-li-margin);
 		padding: 0;
-		line-height: normal; /* Reset default line height */
+		line-height: normal;
 
 		p {
-			/*hyphens: auto;*/
 			margin: 0;
 		}
 		
 	}
-	li::marker {
+
+	li.marker_triangle::marker {
 		content: "▸ ";
-		font-size: var(--article-li-point-size);
+	}
+	li.marker_dot::marker {
+		content: "• ";
 	}
 }
