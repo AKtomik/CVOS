@@ -18,7 +18,7 @@ data-openway="openway": way to open window
 				Le rythme : 1j formation / 4j entreprise.
 			</p>
 			<p>
-				Le lieu : mobile France.
+				Le lieu : partout en France.
 			</p>
 			<p>
 				Vous trouverez <a onclick="TriangleOS.Window.open('template-curry-cnam', 'desktop')">ici</a> tous les détails sur la formation.
@@ -46,10 +46,10 @@ data-openway="openway": way to open window
 		</h1>
 		<p>
 			Bonne navigation!
+			<a onclick="TriangleOS.Window.open('template-iframe-test', 'desktop')">
+				TEST
+			</a>
 		</p>
-		<a onclick="TriangleOS.Window.open('template-iframe-test', 'desktop')">
-			TEST
-		</a>
 	</tos-window>
 </template>
 
@@ -81,6 +81,16 @@ data-openway="openway": way to open window
 			<div class="project-title">A leahsed walk</div>
 			<img src="assets/float/animate/wait.gif" alt="a dogo">
 		</div>
+		<p>
+			<div class="project-actionbar">
+				<nav><p>Liens</p></nav>
+				<article>
+					<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-dogo', 'desktop')">
+					<img src="assets/icons/picto/link-c3.svg" onclick="window.open('https://aktomik.itch.io/leashedwalk', '_blank')">
+				</article>
+				<nav></nav>
+			</div>
+		</p>
 		<p>
 			Roguelite réalisé en équipe durant la PirateJam 16 sur le thème : <b>you are the weapon.</b>
 		</p>
@@ -272,7 +282,8 @@ data-openway="openway": way to open window
 	</tos-window>
 </template>
 <template id="template-iframe-pdf-plak">
-	<tos-window class="size-middle skin-black" data-title="la plaquette de formation">
+	<tos-window class="size-middle skin-black" data-title="la formation : LGIJV au CNAM ENJMIN">
+		<!--la plaquette de formation-->
 		<iframe src="https://drive.google.com/file/d/1BojrSKRjwH6IsTzwdA6p0UwwCUz3R6Hc/preview"></iframe>
 	</tos-window>
 </template>
@@ -402,14 +413,15 @@ data-openway="openway": way to open window
 <template id="template-fun-invicible">
 	<tos-window class="size-little skin-glass" data-title="TRY TO CLOSE ME" data-closeaction="repos" data-hideminibutton>
 		<h3>
-			Cette fenêtre</br> est invincible
+			Cette fenêtre est</br>
+			INVINCIBLE
 		</h3>
 		<p>
-			Ou l'est elle 
+			Mais es-ce
 			<a onclick="TriangleOS.Window.parent(this).remove()">
 					vraiment
 			</a>
-			?
+			le cas ?
 		</p>
 	</tos-window>
 </template>

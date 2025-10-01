@@ -16,6 +16,13 @@
 	color: white;
 }
 
+.pure-black {
+	filter: brightness(0);
+}
+
+.pure-white {
+	filter: brightness(0) invert(1);
+}
 
 img.hover-rotate {
 	transition: transform 3s ease;
