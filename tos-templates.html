@@ -412,7 +412,6 @@ data-openway="openway": way to open window
 -------------->
 
 
-
 <template id="template-iframe-game-4D">
 	<tos-window class="size-big skin-black" data-title="jeu : tic tac toe of space">
 		<iframe src="https://itch.io/embed-upload/14122527?color=000000"></iframe>
@@ -478,106 +477,6 @@ data-openway="openway": way to open window
      TUTO
 -------------->
 
-<template id="template-tuto-anything">
-	<tos-window class="size-middle" data-title="A window can contain ANYTHING">
-		<h1 style="text-align: center;">
-			ANYTHING
-		</h1>
-		<!-- just left ANYTHING for the joke -haha (you) -->
-		<!--<p>
-			A window can contain almost anything HTML content. It is a container like another, isn't it?
-		</p>
-		<p>
-			Except it can be open, dragged, resized...
-		</p>-->
-	</tos-window>
-</template>
-
-<template id="template-tuto-skin">
-	<tos-window class="size-middle skin-raimbow" data-title="custom skins">
-		<h1>
-			Using skins
-		</h1>
-		<p>
-			There is a lot of defaults skins already aviable.
-			But you can create your owns in tos-skin.css or even in another CSS file that you are importing yourself.
-		</p>
-	</tos-window>
-</template>
-
-
-<template id="template-tuto-style">
-	<tos-window class="size-middle" data-title="custom style and size">
-		<p>
-			You can change a element size and skin by adding class.
-		</p>
-		<p>
-			You can make it 
-			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-red')">
-			red
-			</a>
-			, 
-			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-purple')">
-			purple
-			</a>
-			 or 
-			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-transparent')">
-			transparent
-			</a>
-			or even 
-			<a onclick="TriangleOS.Window.parent(this).applySkin('skin-deep', false)">
-			scary
-			</a>
-			.
-		</p>
-		<p>
-			You can make it 
-			<a onclick="TriangleOS.Window.parent(this).applySize('size-small')">
-			small
-			</a>
-			, 
-			<a onclick="TriangleOS.Window.parent(this).applySize('size-middle')">
-			middle
-			</a>
-			 or 
-			<a onclick="TriangleOS.Window.parent(this).applySize('size-big')">
-			big 
-			</a>
-			or even 
-			<a onclick="TriangleOS.Window.parent(this).applySize('size-full')">
-			full
-			</a>
-			.
-		</p>
-	</tos-window>
-</template>
-
-<template id="template-tuto-neast">
-	<tos-window class="size-big skin-glass" data-title="Window is window container">
-		<tos-window class="size-middle skin-red" data-title="Did you know"></tos-window>
-		<tos-window class="size-middle skin-green" data-title="you can create windows"></tos-window>
-		<tos-window class="size-middle skin-blue" data-title="inside of others windows?"></tos-window>
-	</tos-window>
-</template>
-
-
-<template id="template-fun-winception">
-	<tos-window class="size-middle skin-glass" data-title="winception">
-		<p>
-			how deep is it?</br>
-			<a onclick="TriangleOS.Template.spawn('template-fun-winception', TriangleOS.Window.parent(this))">
-				click here to know
-			</a>
-		</p>
-	</tos-window>
-</template>
-
-<template id="template-fun-3cats">
-	<tos-window class="size-small skin-blue" data-title="blue cat"></tos-window>
-	<tos-window class="size-small skin-red" data-title="red cat"></tos-window>
-	<tos-window class="size-small skin-orange" data-title="orange cat"></tos-window>
-</template>
-
 <template id="template-fun-invicible">
 	<tos-window class="size-little skin-glass" data-title="TRY TO CLOSE ME" data-closeaction="repos" data-hideminibutton>
 		<h3>
@@ -594,32 +493,16 @@ data-openway="openway": way to open window
 	</tos-window>
 </template>
 
-<template id="template-fun-big">
-	<tos-window class="size-big skin-glass" data-title="a lot of text">
-		<p>
-			This window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-			this window is big and can contain a lot of text almost bigger than this window is big and can contain a lot of text almost bigger than 
-		</p>
-		<p>
-			But everything has an end :)
-		</p>
+<template id="template-fun-todo">
+	<tos-window class="size-middle skin-white" data-title="TODO.txt">
+		<textarea width="100%" height="100%" style="min-height: 100%; min-width: 100%;">TODO: Writte the TODO.txt</textarea>
 	</tos-window>
 </template>
-
 
 <template id="template-filter-grayscale">
 	<tos-window class="size-middle skin-filter-grayscale" data-title="grayscale filter">
 	</tos-window>
 </template>
-
 
 <template id="template-filter-negative">
 	<tos-window class="size-middle skin-filter-negative" data-title="negative filter">
@@ -628,5 +511,11 @@ data-openway="openway": way to open window
 
 <template id="template-filter-saturate">
 	<tos-window class="size-middle skin-filter-saturate" data-title="saturate filter">
+	</tos-window>
+</template>
+
+<template id="template-app-notepad">
+	<tos-window class="size-middle skin-white" data-title="sans nom.txt">
+		<textarea width="100%" height="100%" style="min-height: 100%; min-width: 100%;"></textarea>
 	</tos-window>
 </template>
