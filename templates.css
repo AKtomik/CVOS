@@ -69,21 +69,25 @@ a {
 			align-items: center;
 			gap: .25rem;
 		}
-		img {
+		> article > * {
 			cursor: pointer;
+			margin-left: 10px;
+
+			/*border: 1px solid;*/
+			border-color: var(--link-color-base);
+			border-radius: 20%;
+			transition: border-color .5s ease, transform .5s ease;
+		}
+		> article > *:hover {
+			border-color: var(--link-color-hover);
+			transform: scale(1.15);
+		}
+		
+		img {
+			display: block;
 			width: 3rem;
 			height: auto;
 			aspect-ratio: 1;
-			margin-left: 10px;
-
-			border: 1px solid;
-			border-color: var(--link-color-base);
-			border-radius: 20%;
-			transition: border-color 1s ease, transform 1s ease;
-		}
-		img:hover {
-			border-color: var(--link-color-hover);
-			transform: scale(1.15);
 		}
 	}
 
