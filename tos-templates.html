@@ -54,6 +54,13 @@ data-openway="openway": way to open window
 </template>
 
 
+<template id="template-iframe-test">
+	<tos-window class="size-middle skin-black" data-title="test">
+		<iframe src="https://neal.fun/"></iframe>
+		<!--<iframe src="https://www.google.com/webhp?igu=1"></iframe>-->
+	</tos-window>
+</template>
+
 <!-------------
    PROJECTS
 -------------->
@@ -83,12 +90,10 @@ data-openway="openway": way to open window
 		</div>
 		<p>
 			<div class="project-actionbar">
-				<nav><p>Liens</p></nav>
 				<article>
 					<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-dogo', 'desktop')">
-					<img src="assets/icons/picto/link-c3.svg" onclick="window.open('https://aktomik.itch.io/leashedwalk', '_blank')">
+					<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/leashedwalk', '_blank')">
 				</article>
-				<nav></nav>
 			</div>
 		</p>
 		<p>
@@ -277,7 +282,7 @@ data-openway="openway": way to open window
 	</tos-window>
 </template>
 <template id="template-iframe-game-fixcalc">
-	<tos-window class="size-middle skin-black" data-title="test">
+	<tos-window class="size-middle skin-black" data-title="calc">
 		<iframe src="https://fixcalc.onrender.com/"></iframe>
 	</tos-window>
 </template>
