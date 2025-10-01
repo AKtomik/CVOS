@@ -37,3 +37,15 @@ ul.li_curse {
 		content: "• ";
 	}
 }
+
+.flex-complement {
+	display: flex;
+	align-items: center;
+
+	.slicer {
+		flex: 1;
+	}
+	.complement {
+		padding-right: 10%;
+	}
+}
