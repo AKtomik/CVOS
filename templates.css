@@ -165,3 +165,24 @@ special
 		width: 3em;
 	}
 }
+
+.xp-rectangles {
+	width: 10em;
+	display: flex;
+	border-radius: 10px;
+	overflow: hidden;
+	outline: solid black 2px;
+	box-shadow: 10px 10px 10px #000000aa;
+
+	.xp-fill {
+		flex: 1;
+		outline: solid black 1px;
+		background-color: yellow;
+		height: 10px;
+	}
+	.xp-empty {
+		flex: 1;
+		outline: solid black 1px;
+		background-color: none;
+	}
+}
