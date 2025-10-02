@@ -23,7 +23,7 @@ contain
 .login-container {
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	gap: .5em;
 	/*display: grid;
   grid-auto-flow: row;*/
 
@@ -42,7 +42,14 @@ contain
 	flex-direction: column;
 	align-items: center;
 	gap: 0;
-	/* is taking more with because of the pdp, idk why */
+	/* is taking more width because of the pdp, idk why */
+}
+
+.login-loading-container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .login-buttons-container {
@@ -79,6 +86,36 @@ header
 	font-size: 1em;
 	margin: 0;
 }
+
+/* 
+loading
+*/
+
+.login-loading {
+	width: 7%;
+	opacity: 0;
+	/*margin: 1%;*/
+	/*background-color: red;*/
+}
+#root.login_start .login-loading {
+	opacity: 1;
+ 	animation: spin-accelerate 4s linear;
+}
+
+@keyframes spin-accelerate {
+  00% { transform: rotate(0turn); }
+  10% { transform: rotate(.4turn); }
+  20% { transform: rotate(1turn); }
+  30% { transform: rotate(1.8turn); }
+  40% { transform: rotate(3turn); }
+  50% { transform: rotate(5turn); }
+  60% { transform: rotate(8turn); }
+  70% { transform: rotate(12turn); }
+  80% { transform: rotate(20turn); }
+  90% { transform: rotate(30turn); }
+  100% { transform: rotate(40turn); }
+}
+
 
 /* 
 buttons
@@ -166,7 +203,7 @@ window
 	/*transition: opacity 1s ease-in-out;*/
 }
 
-#deskwindow.loggedin {
+#deskwindow.login_done {
 	pointer-events: all;
 	opacity: 1;
 }

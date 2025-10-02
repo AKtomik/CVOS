@@ -22,16 +22,25 @@
 
 	<script>
 		var logining = false;
+		
 		function login_start() {
 			if (logining) return;
 			logining = true;
-			setTimeout(login_finish, 1000);
+			document.getElementById('root').classList.add('login_start');
+			setTimeout(login_done, 2000);
 		};
-		function login_finish() {
+
+		function login_done() {
 			TriangleOS.Window.open('template-desk', 'root');
 			TriangleOS.Window.open('template-welcome', 'desktop');
-			document.getElementById('deskwindow').classList.add('loggedin');
+			document.getElementById('root').classList.add('login_done');
+			document.getElementById('deskwindow').classList.add('login_done');
 			logining = false;
+			setTimeout(login_clean, 2000);
+		};
+
+		function login_clean() {
+			document.getElementById('root').classList.remove('login_start');
 		};
 
 		function see_pdf() {
@@ -52,6 +61,9 @@
 							<div class="login-subname">
 								portfolio et CV
 							</div>
+						</div>
+						<div class="login-loading-container">
+							<img class="login-loading" src="assets/icons/login_triangle.svg" id="loading">
 						</div>
 						<div class="login-buttons-container">
 							<button class="login-button login-bold" onclick="login_start()">
