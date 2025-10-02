@@ -26,23 +26,23 @@ pxiel-art {
 .icon-file-folio {
 	opacity: var(--folio-opacity, 1);
 }
-.icon-folder-curry img {
-  content: url('assets/icons/picto/folder-open2.svg');
+.icon-folder-folio img {
+  content: url('assets/icons/picto/folder-brown-open.svg');
 }
 :root[style*="--folio-opacity:0"] .icon-folder-folio img,
 :root[style*="--folio-opacity: 0"] .icon-folder-folio img {
-  content: url('assets/icons/picto/folder-close2.svg');
+  content: url('assets/icons/picto/folder-brown-close.svg');
 }
 
 .icon-file-curry {
 	opacity: var(--curry-opacity, 1);
 }
 .icon-folder-curry img {
-  content: url('assets/icons/picto/folder-open2.svg');
+  content: url('assets/icons/picto/folder-brown-open.svg');
 }
 :root[style*="--curry-opacity:0"] .icon-folder-curry img,
 :root[style*="--curry-opacity: 0"] .icon-folder-curry img {
-  content: url('assets/icons/picto/folder-close2.svg');
+  content: url('assets/icons/picto/folder-brown-close.svg');
 }
 
 ul.li_curse {
