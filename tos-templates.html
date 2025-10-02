@@ -1,8 +1,131 @@
-<!--
-data-title="string": window title
-data-hideheader: hide header
-data-openway="openway": way to open window
--->
+
+<!-------------
+   DESK
+-------------->
+
+
+<template id="template-desk">
+	<tos-desk class="size-full skin-transparent" id="deskwindow" data-title="triangle os" data-openway="top" data-hideheader data-isfullscreen>
+
+		<tos-desktop style="--desktop-columns: 10; --desktop-rows:5;" id="desktop">
+			<!-- projects -->
+			<tos-desktop-icon style="grid-column: 1/3; grid-row: 1/3;" class="icon-file-folio" data-name="tic tac toe" ondblclick="TriangleOS.Window.open('template-project-tictactoe', 'desktop')">
+				<img src="assets/icons/app/ticTacToeSpace.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3/5; grid-row: 1/3;" class="icon-file-folio" data-name="leashed walk" ondblclick="TriangleOS.Window.open('template-project-leashed', 'desktop')">
+				<img src="assets/icons/app/leashedWalk.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 1; grid-row: 3;" class="dark-theme icon-file-folio" data-name="triangleOS" ondblclick="TriangleOS.Window.open('template-project-triangle', 'desktop')">
+				<img src="assets/icons/app/triangleOS.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 2; grid-row: 3;" class="dark-theme icon-file-folio" data-name="shinigami" ondblclick="TriangleOS.Window.open('template-project-shinigami', 'desktop')">
+				<img src="assets/icons/app/shinigami.webp">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3; grid-row: 3;" class="dark-theme icon-file-folio" data-name="purple is red or blue ?" ondblclick="TriangleOS.Window.open('template-project-purple', 'desktop')">
+				<img src="assets/icons/app/purple.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 4; grid-row: 3;" class="dark-theme icon-file-folio" data-name="crazy maze" ondblclick="TriangleOS.Window.open('template-project-maze', 'desktop')">
+				<img src="assets/icons/app/crazyMaze.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 2; grid-row: 4;" class="dark-theme icon-file-folio" data-name="fixcalc" ondblclick="TriangleOS.Window.open('template-project-fixcalc', 'desktop')">
+				<img src="assets/icons/app/fixcalc.svg">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3; grid-row: 4;" class="dark-theme icon-file-folio" data-name="tWOWOrds" ondblclick="TriangleOS.Window.open('template-project-tWOWOrds', 'desktop')">
+				<img src="assets/icons/app/twoWOrds.ico">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 1; grid-row: 4;" class="dark-theme icon-folder-folio" data-name="projets"
+				ondblclick="document.documentElement.style.setProperty('--folio-opacity', document.documentElement.style.getPropertyValue('--folio-opacity')==='0' ? '1' : '0');">
+				<img>
+			</tos-desktop-icon>
+
+			<!-- curry -->
+			<tos-desktop-icon style="grid-column: 6; grid-row: 2;" class="icon-file-curry" data-name="mes Compétences" ondblclick="TriangleOS.Window.open('template-curry-skills', 'desktop')">
+				<img src="assets/icons/quater/code.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 7; grid-row: 2;" class="icon-file-curry" data-name="mon Parcours" ondblclick="TriangleOS.Window.open('template-curry-levels', 'desktop')">
+				<img src="assets/icons/quater/book.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 6; grid-row: 3;" class="icon-file-curry dark-theme" data-name="mes Experiences" ondblclick="TriangleOS.Window.open('template-curry-xp', 'desktop')">
+				<img src="assets/icons/quater/joy.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 7; grid-row: 3;" class="icon-folder-curry dark-theme" data-name="CV" 
+				ondblclick="document.documentElement.style.setProperty('--curry-opacity', document.documentElement.style.getPropertyValue('--curry-opacity')==='0' ? '1' : '0');">
+				<img>
+			</tos-desktop-icon>
+
+			<!-- docs -->
+			<tos-desktop-icon style="grid-column: 5; grid-row: 5;" class="dark-theme" data-name="formation.pdf" ondblclick="TriangleOS.Window.open('template-iframe-pdf-plak', 'desktop')">
+				<img src="assets/icons/cnam.jpg">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 6; grid-row: 5;" class="dark-theme" data-name="classique.cv" ondblclick="TriangleOS.Window.open('template-iframe-pdf-classiccv', 'desktop')">
+				<img src="assets/icons/picto/file-user.svg">
+			</tos-desktop-icon>
+
+			<!-- filters -->
+			<tos-desktop-icon style="grid-column: -2;" data-name="old.window" ondblclick="TriangleOS.Window.open('template-filter-grayscale', 'desktop')">
+				<img src="assets/icons/win/grayscale.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: -2;" data-name="neg.window" ondblclick="TriangleOS.Window.open('template-filter-negative', 'desktop')">
+				<img src="assets/icons/win/negative.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: -2;" class="dark-theme" data-name="sat.window" ondblclick="TriangleOS.Window.open('template-filter-saturate', 'desktop')">
+				<img src="assets/icons/win/saturate.png">
+			</tos-desktop-icon>
+			
+			<!-- cool -->
+			<tos-desktop-icon style="grid-column: 9; grid-row: 1;" data-name="TODO.txt" ondblclick="TriangleOS.Window.open('template-fun-todo', 'desktop')">
+				<img src="assets/icons/picto/postit.svg">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 9; grid-row: 2;" data-name="notepad.ewe" ondblclick="TriangleOS.Window.open('template-app-notepad', 'desktop')">
+				<img src="assets/icons/picto/file-pixel.svg">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 8; grid-row: 5;" class="dark-theme" data-name="virus.window" ondblclick="TriangleOS.Window.open('template-fun-invicible', 'desktop')">
+				<img src="assets/icons/win/malicious.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: -2; grid-row: -3;" class="dark-theme" data-name="winception.ewe" ondblclick="TriangleOS.Window.open('template-iframe-self', 'desktop')">
+				<img src="assets/icons/picto/file-ewe.svg" class="pure-black">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: -2; grid-row: -2;" class="dark-theme" data-name="meta.ewe" 
+				ondblclick="document.getElementById('deskwindow').hideHeader = !document.getElementById('deskwindow').hideHeader;">
+				<img src="assets/icons/picto/file-ewe.svg" class="pure-black">
+
+			</tos-desktop-icon>
+
+			<tos-spawn template="template-welcome"></tos-spawn>
+		</tos-desktop>
+		
+		<tos-deskbar>
+			<tos-deskbar-launch onclick="TriangleOS.Window.open('template-welcome', 'desktop')"></tos-deskbar-launch>
+
+			<tos-deskbar-icon onclick="window.open('https://github.com/AKtomik', '_blank').focus()">
+				<img src="assets/icons/web/github.svg">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="window.open('https://www.linkedin.com/in/evann-brunet-bb3949341/', '_blank').focus()">
+				<img src="assets/icons/web/linkedin.svg">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="window.open('https://aktomik.itch.io/', '_blank').focus()">
+				<img src="assets/icons/web/itch.svg">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="window.open('mailto:evanndev.contact@gmail.com', '_blank').focus()">
+				<img src="assets/icons/web/mail.svg">
+			</tos-deskbar-icon>
+
+			<tos-deskbar-icon></tos-deskbar-icon>
+			
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-4D', 'desktop')">
+				<img src="assets/icons/app/ticTacToeSpace.png">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-dogo', 'desktop')">
+				<img src="assets/icons/app/leashedWalk.png">
+			</tos-deskbar-icon>
+		</tos-deskbar>
+	</tos-desk>
+</template>
+
+<!-------------
+   WELCOME
+-------------->
+
 
 <template id="template-welcome">
 	<style>
