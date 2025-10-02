@@ -107,7 +107,10 @@ a {
 		}
 	}
 
-	/* style links */
+	/* 
+	general style 
+	*/
+	
 	a {
 		color: var(--link-color-base);
 		text-decoration: none;
@@ -121,7 +124,9 @@ a {
 	}
 }
 
-/* special */
+/* 
+special
+*/
 
 .absolute-timeline {
 	position: absolute;
@@ -129,4 +134,34 @@ a {
 	left: .75em;
 	height: 1000%;
 	width: 0;
+}
+
+.corner-tip {
+  position: sticky;
+	bottom: 0;
+	right: 0;
+  display: flex;
+  justify-content: flex-end;
+	font-family: 'Brush Script MT', cursive;
+	/*opacity: .5;*/
+
+	> .corner {
+		display: flex;
+		justify-content: flex-end;
+		backdrop-filter: blur(10px);
+		background-color: #00000011;
+		align-items: center;
+		padding-left: 1em;
+		border-top-left-radius: 1em;
+	}
+
+	p {
+		line-break: strict;
+	}
+
+	img {
+		margin: 1em;
+		margin-right: 1px;
+		width: 3em;
+	}
 }
