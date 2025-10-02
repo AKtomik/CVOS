@@ -20,12 +20,22 @@
 		<link rel="stylesheet" href="appearance.css">
 	</head>
 
+	<script>
+		function login_start() {
+			TriangleOS.Window.open('template-desk', 'root');
+			TriangleOS.Window.open('template-welcome', 'desktop');
+			document.getElementById('deskwindow').classList.add('loggedin');
+		};
+	</script>
+
 	<body>
 		<tos-root class="size-full" id="root">
 			<div class="login-screen">
-				<button class="login-button" onclick="TriangleOS.Window.open('template-desk', 'root'); TriangleOS.Window.open('template-welcome', 'desktop')">
-					se connecter
-				</button>
+				<div>
+					<button class="login-button" onclick="login_start()">
+						se connecter
+					</button>
+				</div>
 			</div>
 		</tos-root>
 	</body>
