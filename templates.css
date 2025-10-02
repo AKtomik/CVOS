@@ -138,8 +138,6 @@ special
 
 .corner-tip {
   position: sticky;
-	bottom: 0;
-	right: 0;
   display: flex;
   justify-content: flex-end;
 	font-family: 'Brush Script MT', cursive;
@@ -164,4 +162,20 @@ special
 		margin-right: 1px;
 		width: 3em;
 	}
+}
+.corner-tip.top-left {
+	top: 0;
+	left: 0;
+}
+.corner-tip.top-right {
+	top: 0;
+	right: 0;
+}
+.corner-tip.bottom-left {
+	bottom: 0;
+	left: 0;
+}
+.corner-tip.bottom-right {
+	bottom: 0;
+	right: 0;
 }
