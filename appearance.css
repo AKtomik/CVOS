@@ -25,6 +25,11 @@ pxiel-art {
 }*/
 .icon-file-folio {
 	opacity: var(--folio-opacity, 1);
+	transition: opacity 0.25s ease-in-out;
+}
+:root[style*="--folio-opacity:0"] .icon-file-folio,
+:root[style*="--folio-opacity: 0"] .icon-file-folio {
+    pointer-events: none !important;
 }
 .icon-folder-folio img {
   content: url('assets/icons/picto/folder-brown-open.svg');
@@ -36,6 +41,11 @@ pxiel-art {
 
 .icon-file-curry {
 	opacity: var(--curry-opacity, 1);
+	transition: opacity 0.25s ease-in-out;
+}
+:root[style*="--curry-opacity:0"] .icon-file-curry,
+:root[style*="--curry-opacity: 0"] .icon-file-curry {
+    pointer-events: none !important;
 }
 .icon-folder-curry img {
   content: url('assets/icons/picto/folder-brown-open.svg');
