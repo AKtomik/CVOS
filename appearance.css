@@ -13,6 +13,11 @@ pxiel-art {
 	font-weight: bold;
 }
 
+.disabled-icon {
+	pointer-events: none !important;
+	cursor: default !important;
+}
+
 
 ul.li_curse {
 	margin-top: .2em;
