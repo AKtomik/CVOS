@@ -33,6 +33,10 @@
 			document.getElementById('deskwindow').classList.add('loggedin');
 			logining = false;
 		};
+
+		function see_pdf() {
+			window.open('https://drive.google.com/file/d/1qqtFHB9WWBFsGHaRU0LWBQM3BONmv__I', '_blank');
+		}
 	</script>
 
 	<body>
@@ -53,7 +57,7 @@
 							<button class="login-button login-bold" onclick="login_start()">
 								Continuer
 							</button>
-							<button class="login-button" onclick="login_start()">
+							<button class="login-button" onclick="see_pdf()">
 								Voir le PDF
 							</button>
 						</div>
