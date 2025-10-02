@@ -23,13 +23,27 @@ pxiel-art {
 	--folio-opacity: 1;
 	--curry-opacity: 0;
 }*/
-.icon-cat-folio {
+.icon-file-folio {
 	opacity: var(--folio-opacity, 1);
 }
-.icon-cat-curry {
-	opacity: var(--curry-opacity, 1);
+.icon-folder-curry img {
+  content: url('assets/icons/picto/folder-open2.svg');
+}
+:root[style*="--folio-opacity:0"] .icon-folder-folio img,
+:root[style*="--folio-opacity: 0"] .icon-folder-folio img {
+  content: url('assets/icons/picto/folder-close2.svg');
 }
 
+.icon-file-curry {
+	opacity: var(--curry-opacity, 1);
+}
+.icon-folder-curry img {
+  content: url('assets/icons/picto/folder-open2.svg');
+}
+:root[style*="--curry-opacity:0"] .icon-folder-curry img,
+:root[style*="--curry-opacity: 0"] .icon-folder-curry img {
+  content: url('assets/icons/picto/folder-close2.svg');
+}
 
 ul.li_curse {
 	margin-top: .2em;
