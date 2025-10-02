@@ -21,10 +21,17 @@
 	</head>
 
 	<script>
+		var logining = false;
 		function login_start() {
+			if (logining) return;
+			logining = true;
+			setTimeout(login_finish, 1000);
+		};
+		function login_finish() {
 			TriangleOS.Window.open('template-desk', 'root');
 			TriangleOS.Window.open('template-welcome', 'desktop');
 			document.getElementById('deskwindow').classList.add('loggedin');
+			logining = false;
 		};
 	</script>
 
