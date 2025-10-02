@@ -19,6 +19,18 @@ pxiel-art {
 }
 
 
+/*body {
+	--folio-opacity: 1;
+	--curry-opacity: 0;
+}*/
+.icon-cat-folio {
+	opacity: var(--folio-opacity, 1);
+}
+.icon-cat-curry {
+	opacity: var(--curry-opacity, 1);
+}
+
+
 ul.li_curse {
 	margin-top: .2em;
 	margin-bottom: .5em;
