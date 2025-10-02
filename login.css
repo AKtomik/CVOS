@@ -21,13 +21,63 @@ contain
 
 
 .login-container {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	/*display: grid;
+  grid-auto-flow: row;*/
+
+	color: white;
+	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-size: 1em;
+}
+
+.login-bold {
+	font-weight: bold;
+}
+
+.login-header-container {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0;
+	/* is taking more with because of the pdp, idk why */
 }
 
 .login-buttons-container {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1em;
+}
+
+/* 
+header
+*/
+
+.login-pdp {
+	flex: 0 0 auto;
+	width: 40%;
+	height: auto;
+	aspect-ratio: 1;
+
+	border-radius: 100%;
+	border: 4px solid #00000000;
+	outline: 2px solid white;
+	background-clip: padding-box;
+	margin: 0;
+}
+
+.login-name {
+	font-size: 2em;
+	margin: 0;
+}
+
+.login-subname {
+	font-size: 1em;
+	margin: 0;
 }
 
 /* 
@@ -38,11 +88,12 @@ buttons
 	--outline-gap: 4px;
 	--outline-width: 2px;
 
-	color: white;
+	max-width: max(20vw, 30vh);
+	/* here the witdth is defined */
 
-	font-family: "Segoe UI", Tahoma, sans-serif;
-	font-size: 1em;
-	font-weight: bold;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
 	cursor: pointer;
 	
 	padding: .25em 2em;
