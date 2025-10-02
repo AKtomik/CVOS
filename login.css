@@ -104,16 +104,17 @@ loading
 
 @keyframes spin-accelerate {
   00% { transform: rotate(0turn); }
-  10% { transform: rotate(.4turn); }
-  20% { transform: rotate(1turn); }
-  30% { transform: rotate(1.8turn); }
-  40% { transform: rotate(3turn); }
-  50% { transform: rotate(5turn); }
-  60% { transform: rotate(8turn); }
-  70% { transform: rotate(12turn); }
-  80% { transform: rotate(20turn); }
-  90% { transform: rotate(30turn); }
-  100% { transform: rotate(40turn); }
+  05% { transform: rotate(.4turn); }
+  10% { transform: rotate(1turn); }
+  15% { transform: rotate(1.8turn); }
+  20% { transform: rotate(3turn); }
+  25% { transform: rotate(5turn); }
+  30% { transform: rotate(8turn); }
+  40% { transform: rotate(20turn); }
+  35% { transform: rotate(12turn); }
+  45% { transform: rotate(30turn); }
+  50% { transform: rotate(40turn); }
+  100% { transform: rotate(100turn); }
 }
 
 
@@ -200,7 +201,7 @@ window
 #deskwindow {
 	pointer-events: none;
 	opacity: 0;
-	/*transition: opacity 1s ease-in-out;*/
+	transition: opacity .5s ease-in-out;
 }
 
 #deskwindow.login_done {
