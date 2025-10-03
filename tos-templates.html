@@ -31,7 +31,7 @@
 				<img src="assets/icons/app/fixcalc.svg">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 3; grid-row: 4;" class="dark-theme icon-file-folio" data-name="tWOWOrds" ondblclick="TriangleOS.Window.open('template-project-tWOWOrds', 'desktop')">
-				<img src="assets/icons/app/twoWOrds.ico">
+				<img src="assets/icons/app/tWOWOrds.ico">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 1; grid-row: 4;" class="dark-theme icon-folder-folio" data-name="projets"
 				ondblclick="document.documentElement.style.setProperty('--folio-opacity', document.documentElement.style.getPropertyValue('--folio-opacity')==='0' ? '1' : '0');">
@@ -117,6 +117,15 @@
 			</tos-deskbar-icon>
 			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-dogo', 'desktop')">
 				<img src="assets/icons/app/leashedWalk.png">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-maze', 'desktop')">
+				<img src="assets/icons/app/crazyMaze.png">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-fixcalc', 'desktop')">
+				<img src="assets/icons/picto/calc.svg">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-tWOWOrds', 'desktop')">
+				<img src="assets/icons/app/tWOWOrds.ico">
 			</tos-deskbar-icon>
 		</tos-deskbar>
 	</tos-desk>
@@ -342,7 +351,7 @@
 		</div>
 		<div class="project-actionbar">
 			<article>
-				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-calc', 'desktop')">
+				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-fixcalc', 'desktop')">
 				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/fixcalc', '_blank')">
 			</article>
 		</div>
@@ -364,7 +373,7 @@
 		</div>
 		<div class="project-actionbar">
 			<article>
-				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-2words', 'desktop')">
+				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-tWOWOrds', 'desktop')">
 				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/tWOWOrds', '_blank')">
 			</article>
 		</div>
@@ -643,22 +652,22 @@
 	</tos-window>
 </template>
 <template id="template-iframe-game-maze">
-	<tos-window class="size-middle skin-black" data-title="jeu : crazyMaze">
+	<tos-window class="size-big skin-black" data-title="jeu : crazyMaze">
 		<iframe src="https://itch.io/embed-upload/13018791?color=000000"></iframe>
 	</tos-window>
 </template>
-<template id="template-iframe-game-2words">
-	<tos-window class="size-middle skin-black" data-title="jeu : tWOWOrds">
+<template id="template-iframe-game-tWOWOrds">
+	<tos-window class="size-big skin-black" data-title="jeu : tWOWOrds">
 		<iframe src="https://aktomik.github.io/tWOWOrds/"></iframe>
 	</tos-window>
 </template>
-<template id="template-iframe-game-calc">
+<template id="template-iframe-game-fixcalc">
 	<tos-window class="size-middle skin-black" data-title="app : fixcalc (calculatrice de dérivées)">
 		<iframe src="https://fixcalc.onrender.com/"></iframe>
 	</tos-window>
 </template>
 <template id="template-iframe-game-triangle">
-	<tos-window class="size-middle skin-black" data-title="app : triangleOS">
+	<tos-window class="size-big skin-black" data-title="app : triangleOS">
 		<iframe src="https://triangle.js.org"></iframe>
 	</tos-window>
 </template>

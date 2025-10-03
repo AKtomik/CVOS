@@ -201,7 +201,7 @@ window
 #deskwindow {
 	pointer-events: none;
 	opacity: 0;
-	transition: opacity .5s ease-in-out;
+	transition: opacity .7s ease-in-out;
 }
 
 #deskwindow.login_done {
