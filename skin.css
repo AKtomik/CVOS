@@ -5,3 +5,31 @@
 		backdrop-filter: blur(20px);
 	}
 }
+
+
+.tos-window.skin-loading > section {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+}
+/* Rotating background using ::before */
+.tos-window.skin-loading > section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/assets/icons/login_triangle.svg) center/2em no-repeat;
+  transform-origin: center center;
+  animation: rotate-bg .5s linear infinite;
+  opacity: 1;
+  z-index: 0;
+}
+/* Keep content above the animation */
+.tos-window.skin-loading > section * {
+  position: relative;
+  z-index: 1;
+}
+/* Rotation keyframes */
+@keyframes rotate-bg {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(1); }
+}
