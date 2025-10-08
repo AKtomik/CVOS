@@ -17,7 +17,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url(/assets/icons/login_triangle.svg) center/2em no-repeat;
+  background: url(assets/icons/login_triangle.svg) center/2em no-repeat;
   transform-origin: center center;
   animation: rotate-bg .5s linear infinite;
   opacity: 1;
