@@ -136,6 +136,9 @@ special
 	width: 0;
 }
 
+.tos-is-fullscreen > section > .corner-tip {
+	display: none;
+}
 .corner-tip {
   position: sticky;
 	bottom: 0;
