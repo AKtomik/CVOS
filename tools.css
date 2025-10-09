@@ -7,6 +7,10 @@
 	text-align: right;
 }
 
+.align-center {
+	text-align: center;
+}
+
 
 .light-theme {
 	color: black;
