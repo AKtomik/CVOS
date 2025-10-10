@@ -9,8 +9,8 @@ pxiel-art {
 /*.tos-desktop-icon > header > img */
 
 .tos-desktop-icon > footer > p {
-	font-size: 1.1rem;
-	font-weight: bold;
+	font-size: .6em;
+	font-weight: bolder;
 }
 
 .disabled-icon {

@@ -27,10 +27,10 @@ a {
 		margin-right: 5%;
 	}
 
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	
 	.small {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	.tiny {
@@ -38,7 +38,7 @@ a {
 	}
 
 	.big {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 
 	.giant {
@@ -131,7 +131,7 @@ special
 .absolute-timeline {
 	position: absolute;
 	outline: black solid 1px;
-	left: .75em;
+	left: 1.02em;
 	height: 1000%;
 	width: 0;
 }
