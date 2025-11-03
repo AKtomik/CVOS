@@ -15,16 +15,19 @@
 			<tos-desktop-icon style="grid-column: 3/5; grid-row: 1/3;" class="icon-file-folio" data-name="leashed walk" ondblclick="TriangleOS.Window.open('template-project-leashed', 'desktop')">
 				<img src="assets/icons/app/leashedWalk.png">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 1; grid-row: 3;" class="dark-theme icon-file-folio" data-name="triangleOS" ondblclick="TriangleOS.Window.open('template-project-triangle', 'desktop')">
+			<tos-desktop-icon style="grid-column: 1; grid-row: 3;" class="dark-theme icon-file-folio" data-name="Don't Look" ondblclick="TriangleOS.Window.open('template-project-dontlook', 'desktop')">
+				<img src="assets/icons/app/dontlook.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 2; grid-row: 3;" class="dark-theme icon-file-folio" data-name="triangleOS" ondblclick="TriangleOS.Window.open('template-project-triangle', 'desktop')">
 				<img src="assets/icons/app/triangleOS.png">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 2; grid-row: 3;" class="dark-theme icon-file-folio" data-name="shinigami" ondblclick="TriangleOS.Window.open('template-project-shinigami', 'desktop')">
+			<tos-desktop-icon style="grid-column: 3; grid-row: 3;" class="dark-theme icon-file-folio" data-name="shinigami" ondblclick="TriangleOS.Window.open('template-project-shinigami', 'desktop')">
 				<img src="assets/icons/app/shinigami.webp">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 3; grid-row: 3;" class="dark-theme icon-file-folio" data-name="purple is red or blue ?" ondblclick="TriangleOS.Window.open('template-project-purple', 'desktop')">
+			<tos-desktop-icon style="grid-column: 4; grid-row: 3;" class="dark-theme icon-file-folio" data-name="purple is red or blue ?" ondblclick="TriangleOS.Window.open('template-project-purple', 'desktop')">
 				<img src="assets/icons/app/purple.png">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 4; grid-row: 3;" class="dark-theme icon-file-folio" data-name="crazy maze" ondblclick="TriangleOS.Window.open('template-project-maze', 'desktop')">
+			<tos-desktop-icon style="grid-column: 1; grid-row: 4;" class="dark-theme icon-file-folio" data-name="crazy maze" ondblclick="TriangleOS.Window.open('template-project-maze', 'desktop')">
 				<img src="assets/icons/app/crazyMaze.png">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 2; grid-row: 4;" class="dark-theme icon-file-folio" data-name="fixcalc" ondblclick="TriangleOS.Window.open('template-project-fixcalc', 'desktop')">
@@ -33,7 +36,7 @@
 			<tos-desktop-icon style="grid-column: 3; grid-row: 4;" class="dark-theme icon-file-folio" data-name="tWOWOrds" ondblclick="TriangleOS.Window.open('template-project-tWOWOrds', 'desktop')">
 				<img src="assets/icons/app/tWOWOrds.ico">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 1; grid-row: 4;" class="dark-theme icon-folder-folio" data-name="projets"
+			<tos-desktop-icon style="grid-column: 1; grid-row: 5;" class="dark-theme icon-folder-folio" data-name="projets"
 				ondblclick="document.documentElement.style.setProperty('--folio-opacity', document.documentElement.style.getPropertyValue('--folio-opacity')==='0' ? '1' : '0');">
 				<img>
 			</tos-desktop-icon>
@@ -117,6 +120,9 @@
 			</tos-deskbar-icon>
 			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-dogo', 'desktop')">
 				<img src="assets/icons/app/leashedWalk.png">
+			</tos-deskbar-icon>
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-look', 'desktop')">
+				<img src="assets/icons/app/dontlook.png">
 			</tos-deskbar-icon>
 			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-maze', 'desktop')">
 				<img src="assets/icons/app/crazyMaze.png">
@@ -262,6 +268,32 @@
 		</p>
 		<p>
 			Première réalisation en game jam. Écriture d'un Game Gesign Document en anglais.
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-dontlook">
+	<tos-window class="size-middle skin-gray scrollable project-window dark-theme" data-title="projet : don't look" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Don't Look</div>
+			<img src="assets/float/look_dino.png" alt="a dino">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-look', 'desktop')">
+				<img src="assets/icons/web/youtube.svg" onclick="TriangleOS.Window.open('template-iframe-play-look', 'desktop')">
+				<img src="assets/icons/web/itch.svg" onclick="window.open('https://crvoy.itch.io/dont-look', '_blank')">
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/coco3167/dontlookatme', '_blank')">
+			</article>
+		</div>
+		<p>
+			Enfermé dans cette salle bien étrange, il faudra s'échapper sans être victime de cette fin qui semble inévitable.
+		</p>
+		<p>
+			Semi-horreur réalisé en équipe de durant l'ENJAM 2025 en 2 jours et 2 heures sur le thème : <b>it always end like this.</b>
+		</p>
+		<p>
+			J'ai pu concevoir le niveau et développer différentes mécaniques de jeu.
 		</p>
 	</tos-window>
 </template>
@@ -661,6 +693,11 @@
 		<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>
 	</tos-window>
 </template>
+<template id="template-iframe-game-look">
+	<tos-window class="size-big skin-loading" data-title="jeu : Don't Look">
+		<iframe src="https://itch.io/embed-upload/15426700?color=000000"></iframe>
+	</tos-window>
+</template>
 <template id="template-iframe-game-maze">
 	<tos-window class="size-big skin-loading" data-title="jeu : crazyMaze">
 		<iframe src="https://itch.io/embed-upload/13018791?color=000000"></iframe>
@@ -679,6 +716,12 @@
 <template id="template-iframe-game-triangle">
 	<tos-window class="size-big skin-loading" data-title="app : triangleOS">
 		<iframe src="https://triangle.js.org"></iframe>
+	</tos-window>
+</template>
+
+<template id="template-iframe-play-look">
+	<tos-window class="size-big skin-loading" data-title="trailer : a Leashed Walk">
+		<iframe src="https://www.youtube.com/embed/WgDDelBRaPQ?autoplay=1"></iframe>
 	</tos-window>
 </template>
 
