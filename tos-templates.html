@@ -288,7 +288,7 @@
 		<div class="project-actionbar">
 			<article>
 				<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-look', 'desktop')">
-				<img src="assets/icons/web/youtube.svg" onclick="TriangleOS.Window.open('template-iframe-play-look', 'desktop')">
+				<img src="assets/icons/web/youtube.svg" onclick="TriangleOS.Window.open('template-iframe-video-look', 'desktop')">
 				<img src="assets/icons/web/itch.svg" onclick="window.open('https://crvoy.itch.io/dont-look', '_blank')">
 				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/coco3167/dontlookatme', '_blank')">
 			</article>
@@ -710,7 +710,8 @@
 </template>
 <template id="template-iframe-game-dogo">
 	<tos-window class="size-big skin-loading" data-title="jeu : a Leashed Walk">
-		<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>
+		<!--<iframe src="https://itch.io/embed-upload/12959650?color=000000"></iframe>-->
+		<iframe frameborder="0" src="https://itch.io/embed-upload/12672438?color=000000" allowfullscreen="" width="640" height="380"><a href="https://aktomik.itch.io/leashedwalk">Play A leashed walk on itch.io</a></iframe>
 	</tos-window>
 </template>
 <template id="template-iframe-game-look">
@@ -739,7 +740,7 @@
 	</tos-window>
 </template>
 
-<template id="template-iframe-play-look">
+<template id="template-iframe-video-look">
 	<tos-window class="size-big skin-loading" data-title="trailer : a Leashed Walk">
 		<iframe src="https://www.youtube.com/embed/WgDDelBRaPQ?autoplay=1"></iframe>
 	</tos-window>
