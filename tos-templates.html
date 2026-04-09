@@ -12,7 +12,13 @@
 			<tos-desktop-icon style="grid-column: 1/3; grid-row: 1/3;" class="icon-file-folio" data-name="tic tac toe" ondblclick="TriangleOS.Window.open('template-project-tictactoe', 'desktop')">
 				<img src="assets/icons/app/ticTacToeSpace.png">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 3/5; grid-row: 1/3;" class="icon-file-folio" data-name="leashed walk" ondblclick="TriangleOS.Window.open('template-project-leashed', 'desktop')">
+			<tos-desktop-icon style="grid-column: 4; grid-row: 1;" class="icon-file-folio" data-name="red clocktower" ondblclick="TriangleOS.Window.open('template-template-project-redclocktower', 'desktop')">
+				<img src="assets/icons/app/leashedWalk.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3; grid-row: 1;" class="icon-file-folio" data-name="shamanamania" ondblclick="TriangleOS.Window.open('template-project-shamanamania', 'desktop')">
+				<img src="assets/icons/app/leashedWalk.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3; grid-row: 2;" class="icon-file-folio" data-name="leashed walk" ondblclick="TriangleOS.Window.open('template-project-leashed', 'desktop')">
 				<img src="assets/icons/app/leashedWalk.png">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 1; grid-row: 3;" class="dark-theme icon-file-folio" data-name="Don't Look" ondblclick="TriangleOS.Window.open('template-project-dontlook', 'desktop')">
@@ -24,7 +30,7 @@
 			<tos-desktop-icon style="grid-column: 3; grid-row: 3;" class="dark-theme icon-file-folio" data-name="shinigami" ondblclick="TriangleOS.Window.open('template-project-shinigami', 'desktop')">
 				<img src="assets/icons/app/shinigami.webp">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 4; grid-row: 3;" class="dark-theme icon-file-folio" data-name="purple is red or blue ?" ondblclick="TriangleOS.Window.open('template-project-purple', 'desktop')">
+			<tos-desktop-icon style="grid-column: 4; grid-row: 2;" class="icon-file-folio" data-name="purple is red or blue ?" ondblclick="TriangleOS.Window.open('template-project-purple', 'desktop')">
 				<img src="assets/icons/app/purple.png">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 1; grid-row: 4;" class="dark-theme icon-file-folio" data-name="crazy maze" ondblclick="TriangleOS.Window.open('template-project-maze', 'desktop')">
@@ -226,6 +232,57 @@
    PROJECTS
 -------------->
 
+<template id="template-project-redclocktower">
+	<tos-window class="size-middle skin-in-red scrollable project-window" data-title="projet : Red Clocktower" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Red Clocktower</div>
+			<img src="assets/float/animate/wait.gif" alt="a dogo">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/RedClocktowerPlugin', '_blank')">
+			</article>
+		</div>
+		<p>
+			Blood On The Clocktower est un jeu de déduction sociale développé par The Pandemonium Institute.
+		</p>
+		<p>
+			J'ai développé en java un plugin permettant d'organiser des parties de Blood On The Clocktower sur Minecraft.
+		</p>
+		<p>
+			S'ajoute à ça plusieurs autres aspects techniques tels que; la conception d'un modpack client, 
+			la synchronisation avec un environement serveur, ou encore le développement d'une addon pour gérer le chat de priximité.
+		</p>
+	</tos-window>
+</template>
+
+
+<template id="template-project-shamanamania">
+	<tos-window class="size-middle skin-in-lime scrollable project-window" data-title="projet : Shamanamania" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Shamanamania</div>
+			<img src="assets/float/animate/wait.gif" alt="a dogo">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<!--<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-shamanamania', 'desktop')">-->
+				<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/shamanamania', '_blank')">
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/shamanamania', '_blank')">
+			</article>
+		</div>
+		<p>
+			Dans ce jeu mystérieux, c'est à vous de comprendre comment terminer le rituel chamanique de votre génération !
+		</p>
+		<p>
+			Puzzle game fait en 48h lors de la Global Game Jam 2026 sur le thème : <b>masks.</b>
+		</p>
+		<p>
+			Jeu développé en équipe de 5, j'ai participé au Game Design, Level Design et développement.
+		</p>
+	</tos-window>
+</template>
+
+
 <template id="template-project-tictactoe">
 	<tos-window class="size-middle skin-in-black scrollable project-window dark-theme" data-title="projet : tic tac toe of space" data-unicOpen>
 		<div class="project-header">
@@ -313,8 +370,8 @@
 		</div>
 			<div class="project-actionbar">
 				<article>
-					<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/Shinigami-company/shini-static', '_blank')">
 					<img src="assets/icons/web/discord.svg" onclick="window.open('https://discord.com/discovery/applications/1279562623075221524', '_blank')">
+					<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/Shinigami-company/shini-static', '_blank')">
 				</article>
 			</div>
 		<p>
