@@ -3,7 +3,14 @@ a {
 	cursor: pointer; color: blue;
 }
 
-
+.image-window {
+	> section > img {
+		object-fit: contain;
+		aspect-ratio: 1;
+		width: 100%;
+		height: 100%;
+	}
+}
 
 /* 
 	projects windows
@@ -107,6 +114,17 @@ a {
 		}
 	}
 
+	/* project gallery */
+	.project-gallery {
+		> * {
+			margin: 5% 5% 5% 5%;
+			width: 20%;
+			height: 20%;
+			outline: 2px solid black;
+			cursor: pointer;
+		}
+	}
+
 	/* 
 	general style 
 	*/
@@ -123,6 +141,7 @@ a {
 		transform: scale(1.05);
 	}
 }
+
 
 /* 
 special
