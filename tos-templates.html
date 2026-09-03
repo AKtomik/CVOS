@@ -9,8 +9,8 @@
 
 		<tos-desktop style="--desktop-columns: 10; --desktop-rows:5;" id="desktop">
 			<!-- projects -->
-			<tos-desktop-icon style="grid-column: 1/3; grid-row: 1/3;" class="icon-file-folio" data-name="tic tac toe" ondblclick="TriangleOS.Window.open('template-project-tictactoe', 'desktop')">
-				<img src="assets/icons/app/ticTacToeSpace.png">
+			<tos-desktop-icon style="grid-column: 1/3; grid-row: 1/3;" class="icon-file-folio" data-name="I throw ME" ondblclick="TriangleOS.Window.open('template-project-ithrowme', 'desktop')">
+				<img src="assets/icons/app/ithrowme.png">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 4; grid-row: 1;" class="icon-file-folio" data-name="red clocktower" ondblclick="TriangleOS.Window.open('template-project-redclocktower', 'desktop')">
 				<img src="assets/icons/app/redclocktower.png">
@@ -24,7 +24,10 @@
 			<tos-desktop-icon style="grid-column: 1; grid-row: 3;" class="dark-theme icon-file-folio" data-name="Don't Look" ondblclick="TriangleOS.Window.open('template-project-dontlook', 'desktop')">
 				<img src="assets/icons/app/dontlook.png">
 			</tos-desktop-icon>
-			<tos-desktop-icon style="grid-column: 2; grid-row: 3;" class="dark-theme icon-file-folio" data-name="triangleOS" ondblclick="TriangleOS.Window.open('template-project-triangle', 'desktop')">
+			<tos-desktop-icon style="grid-column: 2; grid-row: 3;" class="dark-theme icon-file-folio" data-name="tic tac toe" ondblclick="TriangleOS.Window.open('template-project-tictactoe', 'desktop')">
+				<img src="assets/icons/app/ticTacToeSpace.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 4; grid-row: 3;" class="dark-theme icon-file-folio" data-name="triangleOS" ondblclick="TriangleOS.Window.open('template-project-triangle', 'desktop')">
 				<img src="assets/icons/app/triangleOS.png">
 			</tos-desktop-icon>
 			<tos-desktop-icon style="grid-column: 3; grid-row: 3;" class="dark-theme icon-file-folio" data-name="shinigami" ondblclick="TriangleOS.Window.open('template-project-shinigami', 'desktop')">
@@ -231,6 +234,39 @@
 <!-------------
    PROJECTS
 -------------->
+
+
+<template id="template-project-ithrowme">
+	<tos-window class="size-middle skin-in-black scrollable project-window dark-theme" data-title="projet : I throw ME" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">I throw ME</div>
+			<img src="assets/float/animate/cup.gif" alt="rotating cup">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/ithrowme', '_blank')">
+				<img src="assets/icons/web/speedruncom.svg" onclick="window.open('https://www.speedrun.com/ithrowme', '_blank')">
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/ithrowme', '_blank')">
+			</article>
+		</div>
+		<p>
+			Projet de fin d'année présenté aux EGS.
+		</p>
+		<p>
+			Jeu de déplacement dans un environement zéro gravité. Pour vous déplacer, il faudra habilement vous propulser en lançant les objets autour de vous !
+		</p>
+		<!--<p>
+			Suite à un incident inexpliqué, vous voilà bloqués dans APOLITY74, une station spatiale privée de gravité...
+			Pour vous déplacer, il faudra habilement vous propulser en lançant les objets autour de vous.
+			Arriverez-vous à vous échapper de cette station spatiale remplie de secrets ?
+		</p>-->
+		<p>
+			Réalisé en équipe de 4 (2 en art, 2 en programmation).
+			Je me suis occupé du Game Design, Level Design, d'une partie de la programmation gameplay et de la gestion projet.
+		</p>
+	</tos-window>
+</template>
+
 
 <template id="template-project-redclocktower">
 	<tos-window class="size-middle skin-in-red scrollable project-window" data-title="projet : Red Clocktower" data-unicOpen>
