@@ -50,6 +50,13 @@
 				<img src="assets/icons/app/tWOWOrds.ico">
 			</tos-desktop-icon>
 			
+			<tos-desktop-icon style="grid-column: 2; grid-row: 5;" class="dark-theme icon-file-folio" data-name="vaquero" ondblclick="TriangleOS.Window.open('template-project-vaquero', 'desktop')">
+				<img src="assets/icons/app/vaquero.png">
+			</tos-desktop-icon>
+			<tos-desktop-icon style="grid-column: 3; grid-row: 5;" class="dark-theme icon-file-folio" data-name="astra vorax" ondblclick="TriangleOS.Window.open('template-project-astravorax', 'desktop')">
+				<img src="assets/icons/app/astraVorax.png">
+			</tos-desktop-icon>
+
 			<tos-desktop-icon style="grid-column: 1; grid-row: 5;" class="dark-theme icon-folder-folio" data-name="projets"
 				ondblclick="document.documentElement.style.setProperty('--folio-opacity', document.documentElement.style.getPropertyValue('--folio-opacity')==='0' ? '1' : '0');">
 				<img>
@@ -407,10 +414,67 @@
 			Enfermé dans cette salle bien étrange, il faudra s'échapper sans être victime de cette fin qui semble inévitable.
 		</p>
 		<p>
-			Semi-horreur réalisé en équipe de durant l'ENJAM 2025 en 2 jours et 2 heures sur le thème : <b>it always end like this.</b>
+			Semi-horreur réalisé en équipe de 6 durant l'ENJAM 2025 en 2 jours et 2 heures sur le thème : <b>it always end like this.</b>
 		</p>
 		<p>
 			J'ai pu développer différentes mécaniques de jeu et concevoir le niveau.
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-astravorax">
+	<tos-window class="size-middle skin-in-gray scrollable project-window dark-theme" data-title="projet : Astra Vorax" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">ASTRA VORAX</div>
+			<div class="project-lore">
+				Absolute Symbiotic Terror Reality Absorber 
+				</br>Vore Overbearing Ruler Astral Xenophagia
+			</div>
+			<img src="assets/float/vorax_planet_2.png" alt="a planet">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<!--<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-atravorax', 'desktop')">-->
+				<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/astra-vorax', '_blank')">
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/astra-vorax', '_blank')">
+			</article>
+		</div>
+		<p>
+			Il vous faudra créer des constelations de planètes pour les dévorer le plus rapidement possible.
+		</p>
+		<p>
+			Puzzle game réalisé en équipe de 6 durant l'ENJAM 2026 en 3 jours sur le thème : <b>A thing of beauty, I know, will never fade away.</b>
+		</p>
+		<p>
+			J'ai pu développer différentes mécaniques de jeu et découvrir les outils de sond design.
+		</p>
+	</tos-window>
+</template>
+
+<template id="template-project-vaquero">
+	<tos-window class="size-middle skin-in-gray scrollable project-window dark-theme" data-title="projet : Vaquero" data-unicOpen>
+		<div class="project-header">
+			<div class="project-title">Vaquero</div>
+			<img src="assets/float/look_dino.png" alt="a cow">
+		</div>
+		<div class="project-actionbar">
+			<article>
+				<!--<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-vaquero', 'desktop')">-->
+				<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/vaquero', '_blank')">
+				<img src="assets/icons/web/github.svg" onclick="window.open('https://github.com/AKtomik/vaquero', '_blank')">
+			</article>
+		</div>
+		<p>
+			<!--Incarnez un cowboy au 16e siècle, une vie loin de l’imaginaire romantique véhiculé par les westerns-->
+			Incarnez un vachier du XVIe siècle et vivez le conflit entre Espagnols et Chichimèques. Quels choix allez vous faire pour survivre ?
+		</p>
+		<p>
+			Jeu narratif et d'arcade réalisé en équipe de 6 durant la jam des RDV de l'histoire en 2 jours autour du thème : <b>les vachers du 16ème siècle au Mexique</b>.
+			<!--Le but de cette jam.-->
+			Nous avions dans notre équipe Jerónimo Bermúdez qui faisait sa thèse d'histoire sur le sujet. Il nous a aidé à la conception du jeu en se basant sur des faits historiques.
+		</p>
+		<p>
+			J'ai développé différentes mécaniques et effectué le Level Design. Manipulation de l'alogrithme de boids pour le déplacement des vaches.
 		</p>
 	</tos-window>
 </template>
