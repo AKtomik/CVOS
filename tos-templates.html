@@ -145,6 +145,9 @@
 			<!--<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-look', 'desktop')">
 				<img src="assets/icons/app/dontlook.png">
 			</tos-deskbar-icon>-->
+			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-astra', 'desktop')">
+				<img src="assets/icons/app/astraVorax.png">
+			</tos-deskbar-icon>
 			<tos-deskbar-icon onclick="TriangleOS.Window.open('template-iframe-game-maze', 'desktop')">
 				<img src="assets/icons/app/crazyMaze.png">
 			</tos-deskbar-icon>
@@ -436,7 +439,7 @@
 		</div>
 		<div class="project-actionbar">
 			<article>
-				<!--<img src="assets/icons/picto/media-play.svg" onclick="TriangleOS.Window.open('template-iframe-game-atravorax', 'desktop')">-->
+				<img src="assets/icons/picto/media-play.svg" class="pure-white" onclick="TriangleOS.Window.open('template-iframe-game-astra', 'desktop')">
 				<img src="assets/icons/web/itch.svg" onclick="window.open('https://aktomik.itch.io/astra-vorax', '_blank')">
 				<img src="assets/icons/web/github.svg" class="pure-white" onclick="window.open('https://github.com/AKtomik/astra-vorax', '_blank')">
 			</article>
@@ -922,11 +925,17 @@
 		<iframe src="https://aktomik.github.io/embed-crazymaze/"></iframe>
 	</tos-window>
 </template>
+<template id="template-iframe-game-astra">
+	<tos-window class="size-big skin-loading" data-title="jeu : ASTRA VORAX">
+		<iframe src="https://aktomik.github.io/embed-astra-vorax/"></iframe>
+	</tos-window>
+</template>
 <template id="template-iframe-game-tWOWOrds">
 	<tos-window class="size-big skin-loading" data-title="jeu : tWOWOrds">
 		<iframe src="https://aktomik.github.io/tWOWOrds/"></iframe>
 	</tos-window>
 </template>
+
 <template id="template-iframe-game-fixcalc">
 	<tos-window class="size-middle skin-loading" data-title="app : fixcalc (calculatrice de dérivées)">
 		<iframe src="https://fixcalc.onrender.com/"></iframe>
